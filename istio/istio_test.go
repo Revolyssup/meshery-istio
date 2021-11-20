@@ -436,6 +436,9 @@ func getConfigHandler(t *testing.T) adapterconfig.Handler {
 	if err != nil {
 		fmt.Println("ERR ")
 	}
+	if h == nil {
+		fmt.Println("BRUH an error here")
+	}
 	return h
 }
 
